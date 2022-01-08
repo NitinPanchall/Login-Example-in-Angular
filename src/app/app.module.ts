@@ -8,17 +8,22 @@ import { AppComponent } from './app.component';
 import { ErrorInterceptor, fakeBackendProvider, JwtInterceptor } from './auth/guards';
 import { LoginComponent } from './auth/login/login.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { AddEmployeComponent } from './admin/add-employe/add-employe.component';
+import { NgbCollapseModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    AddEmployeComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    NgbCollapseModule,
+    NgbDatepickerModule,
     HttpClientModule,
     AppRoutingModule
   ],
