@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'login-example';
+  constructor() {
+    localStorage.setItem("user", JSON.stringify([{ "firstName": "Nitin", "lastName": "Panchal", "username": "Nitin", "password": "123456", "id": 1 }]))
+  }
 }
