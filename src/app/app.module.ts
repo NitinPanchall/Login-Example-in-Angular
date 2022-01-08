@@ -9,7 +9,7 @@ import { ErrorInterceptor, fakeBackendProvider, JwtInterceptor } from './auth/gu
 import { LoginComponent } from './auth/login/login.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { AddEmployeComponent } from './admin/add-employe/add-employe.component';
-import { NgbCollapseModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,9 @@ import { NgbCollapseModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstr
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    NgbCollapseModule,
-    NgbDatepickerModule,
+    // NgbCollapseModule,
+    NgbModule.forRoot(),
+    // NgbDatepickerModule,
     HttpClientModule,
     AppRoutingModule
   ],
